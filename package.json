@@ -1,0 +1,49 @@
+{
+  "name": "simble-live-chat",
+  "version": "0.0.1",
+  "description": "##Stack   koajs   socket.io",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "dotenv": "^2.0.0",
+    "jsonwebtoken": "^7.2.1",
+    "koa": "^2.0.*",
+    "koa-compose": "^3.2.1",
+    "koa-jwt": "^2.1.0",
+    "koa-router": "^7.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "eslint": "^3.13.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "jest-cli": "^18.1.0",
+    "nodemon": "^1.11.0",
+    "supertest": "^2.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "dev": "nodemon -w src --exec \"babel-node src \"",
+    "build": "babel src -s -D -d dist",
+    "start": "node dist",
+    "prestart": "npm run -s build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Alex <shcoder.alex@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
